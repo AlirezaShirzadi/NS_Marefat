@@ -1,4 +1,19 @@
 @import "tailwindcss";
+@import '../public/css/font.css';
+@import '../public/css/button.css';
 
 @source "./../node_modules/preline/dist/*.js";
 @import "./../node_modules/preline/variants.css";
+
+@theme inline {
+    /* fonts */
+    --font-peyda: 'Peyda';
+
+    /* colors */
+    --color-neutral-10: #1A1A1A;
+    --color-neutral-80: #ccc;
+    --color-blue-normal: #00A8F5;
+
+    /* shadow */
+    --shadow-neutral-10: 0 4px 40px 0 rgba(77, 77, 77, 0.08);
+}
