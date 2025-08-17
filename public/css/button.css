@@ -1,3 +1,11 @@
 .btn-outline-sm-icon {
     @apply inline-flex items-center justify-center gap-2 py-3 ps-4 pe-6 bg-white border border-neutral-80 rounded-2xl h-[50px] hover:bg-blue-normal hover:border-blue-normal hover:text-white transition-colors;
 }
+
+.btn-outline-lg {
+    @apply inline-flex items-center justify-center gap-2 py-5 px-10 bg-white border border-neutral-80 rounded-2xl h-16 hover:bg-blue-normal hover:border-blue-normal hover:text-white transition-colors;
+}
+
+.btn-lg {
+    @apply inline-flex items-center justify-center gap-2 py-5 px-10 bg-blue-normal border border-blue-normal text-white rounded-2xl h-16 hover:bg-blue-hover hover:text-white transition-colors;
+}

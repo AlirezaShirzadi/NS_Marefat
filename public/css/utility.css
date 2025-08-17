@@ -1,0 +1,6 @@
+.title-rainbow {
+    background: linear-gradient(90deg, #FF5B33 34.08%, #00BA5B 50.26%, #00A8F5 66.44%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

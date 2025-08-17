@@ -32,6 +32,10 @@
                         </clipPath>
                     </defs>
                 </symbol>
+                <symbol id="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="currentColor">
+                    <path
+                            d="M53.5214 23.3815C58.8262 26.2662 58.8262 33.7338 53.5214 36.6185L21.4915 54.0363C16.3359 56.8399 10 53.1908 10 47.4178L10 12.5822C10 6.80921 16.3359 3.16006 21.4915 5.96369L53.5214 23.3815Z"/>
+                </symbol>
             </svg>
         </div>
 
@@ -61,8 +65,10 @@
                         <div id="search-modal"
                              class="hs-overlay hs-overlay-open:opacity-100 hs-overlay-open:duration-500 hidden size-full fixed top-0 start-0 z-80 opacity-0 overflow-x-hidden transition-all overflow-y-auto pointer-events-none"
                              role="dialog" tabindex="-1" aria-labelledby="search-modal-label">
-                            <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-56px)] flex items-center">
-                                <div class="w-full flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl pointer-events-auto">
+                            <div
+                                    class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-56px)] flex items-center">
+                                <div
+                                        class="w-full flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl pointer-events-auto">
                                     <div class="flex justify-between items-center py-3 px-4">
                                         <button type="button"
                                                 class="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 shrink-0 text-gray-800 hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none"
@@ -84,7 +90,8 @@
                                             </div>
                                             <!-- End Search Input -->
                                             <button type="submit" class="shrink-0 cursor-pointer">
-                                                <div class="flex items-center justify-center bg-blue-600 size-8 rounded-full">
+                                                <div
+                                                        class="flex items-center justify-center bg-blue-600 size-8 rounded-full">
                                                     <svg class="size-4 flex items-center justify-center text-white">
                                                         <use href="#icon-search"/>
                                                     </svg>
@@ -217,6 +224,112 @@
         </header>
         <!-- Header End -->
 
+        <main>
+            <section class="section-home-intro py-6 lg:pt-8 lg:pb-10 ">
+                <div class="relative container mx-auto max-md:px-2">
+                    <div class="absolute hidden top-0 lg:top-[66px] right-0 lg:rotate-45 lg:flex items-center justify-center size-10 lg:size-20 bg-[#FF5B33] text-white lg:text-[32px]/[44px] font-black rounded-3xl">
+                        <span>EN</span>
+                    </div>
+                    <div class="absolute hidden top-0 left-0 lg:-rotate-45 lg:flex items-center justify-center size-10 lg:size-20 bg-[#00BA5B] text-white lg:text-[32px]/[44px] font-black rounded-3xl">
+                        <span>FR</span>
+                    </div>
+                    <h1 class="title-rainbow text-center text-3xl lg:text-[45px]/[56px] font-bold tracking-[-0.25px] mb-8">
+                        موسسه زبان معرفت</h1>
+                    <p class="w-full text-center text-lg lg:text-[22px]/[32px] text-neutral-30 max-w-[870px] mx-auto mb-12">
+                        خانه‌ای برای یادگیری عمیق، رشد مستمر و تحقق رویاهاست؛ جایی که زبان آموزی نه یک مسیر دشوار، بلکه
+                        تجربه‌ای الهام‌بخش، ساختارمند و نتیجه محور است.</p>
+                    <div class="flex flex-wrap justify-center items-center gap-4 mb-8 lg:mb-16">
+                        <a class="btn-lg shrink-0 font-bold group" href="#">
+                            <span class="tracking-[0.15px] text-xl/6">تعیین سطح</span></a>
+                        <a class="btn-outline-lg shrink-0 font-bold group" href="#">
+                            <span class="tracking-[0.15px] text-xl/6">مشاوره رایگان</span></a>
+                    </div>
+                    <!-- Start intro videos -->
+                    <div class="group grid grid-cols-12 lg:flex gap-5 lg:h-[486px] home-slider">
+                        <div
+                                class="h-[200px] group/card lg:h-auto col-span-12 sm:col-span-6 relative flex-1 group-hover:flex-[0.8] hover:flex-[2] transition-all duration-500 overflow-hidden rounded-[50px] after:content-[''] after:absolute after:inset-0 after:size-full after:bg-gradient-to-t after:from-[#292D32] after:to-transparent after:from-0% after:to-100% after:z-20 hover:after:from-[#00A8F5] after:transition-colors">
+                            <img class="w-full h-full object-cover" src="/img/us.png" alt="home-intro"/>
+                            <a href="/img/us.png" data-fancybox="intro-videos"
+                               class="absolute lg:opacity-0 lg:group-hover/card:opacity-100 lg:group-hover:opacity-0 transition-opacity cursor-pointer top-1/2 right-1/2 z-30 translate-x-1/2 -translate-y-1/2">
+                                <svg class="text-white size-[60px]">
+                                    <use href="#icon-play"/>
+                                </svg>
+                            </a>
+                            <h2
+                                    class="absolute text-center z-40 top-[calc(100%-58px)] lg:top-[calc(100%-248px)] right-0 left-0 mx-auto text-nowrap rotate-0 lg:rotate-90 transition-all duration-300 group-hover/card:rotate-0 group-hover/card:top-[calc(100%-58px)] text-white text-[32px]/[44px] font-bold">
+                                آموزش زبان انگلیسی</h2>
+                        </div>
+                        <div
+                                class="h-[200px] group/card lg:h-auto col-span-12 sm:col-span-6 relative flex-1 group-hover:flex-[0.8] hover:flex-[2] transition-all duration-500 overflow-hidden rounded-[50px] after:content-[''] after:absolute after:inset-0 after:size-full after:bg-gradient-to-t after:from-[#292D32] after:to-transparent after:from-0% after:to-100% after:z-20 hover:after:from-[#00A8F5] after:transition-colors">
+                            <img class="w-full h-full object-cover" src="/img/ger.png" alt="home-intro"/>
+                            <a href="/img/us.png" data-fancybox="intro-videos"
+                               class="absolute lg:opacity-0 lg:group-hover/card:opacity-100 lg:group-hover:opacity-0 transition-opacity cursor-pointer top-1/2 right-1/2 z-30 translate-x-1/2 -translate-y-1/2">
+                                <svg class="text-white size-[60px]">
+                                    <use href="#icon-play"/>
+                                </svg>
+                            </a>
+                            <h2
+                                    class="absolute text-center z-40 top-[calc(100%-58px)] lg:top-[calc(100%-248px)] right-0 left-0 mx-auto text-nowrap rotate-0 lg:rotate-90 transition-all duration-300 group-hover/card:rotate-0 group-hover/card:top-[calc(100%-58px)] text-white text-[32px]/[44px] font-bold">
+                                آموزش زبان آلمانی</h2>
+                        </div>
+                        <div
+                                class="h-[200px] group/card lg:h-auto col-span-12 sm:col-span-6 relative flex-1 group-hover:flex-[0.8] hover:flex-[2] transition-all duration-500 overflow-hidden rounded-[50px] after:content-[''] after:absolute after:inset-0 after:size-full after:bg-gradient-to-t after:from-[#292D32] after:to-transparent after:from-0% after:to-100% after:z-20 hover:after:from-[#00A8F5] after:transition-colors">
+                            <img class="w-full h-full object-cover" src="/img/us.png" alt="home-intro"/>
+                            <a href="/img/us.png" data-fancybox="intro-videos"
+                               class="absolute lg:opacity-0 lg:group-hover/card:opacity-100 lg:group-hover:opacity-0 transition-opacity cursor-pointer top-1/2 right-1/2 z-30 translate-x-1/2 -translate-y-1/2">
+                                <svg class="text-white size-[60px]">
+                                    <use href="#icon-play"/>
+                                </svg>
+                            </a>
+                            <h2
+                                    class="absolute text-center z-40 top-[calc(100%-58px)] lg:top-[calc(100%-248px)] right-0 left-0 mx-auto text-nowrap rotate-0 lg:rotate-90 transition-all duration-300 group-hover/card:rotate-0 group-hover/card:top-[calc(100%-58px)] text-white text-[32px]/[44px] font-bold">
+                                آموزش زبان فرانسوی</h2>
+                        </div>
+                        <div
+                                class="h-[200px] group/card lg:h-auto col-span-12 sm:col-span-6 relative flex-1 group-hover:flex-[0.8] hover:flex-[2] transition-all duration-500 overflow-hidden rounded-[50px] after:content-[''] after:absolute after:inset-0 after:size-full after:bg-gradient-to-t after:from-[#292D32] after:to-transparent after:from-0% after:to-100% after:z-20 hover:after:from-[#00A8F5] after:transition-colors">
+                            <img class="w-full h-full object-cover" src="/img/us.png" alt="home-intro"/>
+                            <a href="/img/us.png" data-fancybox="intro-videos"
+                               class="absolute lg:opacity-0 lg:group-hover/card:opacity-100 lg:group-hover:opacity-0 transition-opacity cursor-pointer top-1/2 right-1/2 z-30 translate-x-1/2 -translate-y-1/2">
+                                <svg class="text-white size-[60px]">
+                                    <use href="#icon-play"/>
+                                </svg>
+                            </a>
+                            <h2
+                                    class="absolute text-center z-40 top-[calc(100%-58px)] lg:top-[calc(100%-248px)] right-0 left-0 mx-auto text-nowrap rotate-0 lg:rotate-90 transition-all duration-300 group-hover/card:rotate-0 group-hover/card:top-[calc(100%-58px)] text-white text-[32px]/[44px] font-bold  ">
+                                آموزش زبان ترکی استانبولی</h2>
+                        </div>
+                    </div>
+                    <!-- End intro videos -->
+                </div>
+            </section>
+
+            <section class="section-home-feature relative py-6 lg:py-20 bg-gradient-to-b from-green-normal from-80% to-transparent to-80% after:content-[''] after:absolute after:inset-0 after:size-full after:bg-[url('./../public/img/rec-bg.png')] after:bg-center after:bg-no-repeat after:bg-cover">
+                <div class="relative container mx-auto max-md:px-2">
+                    <div class="text-center text-white text-base/[24px] tracking-[0.25px]">
+                        <span class="block mb-4">ویژگی‌های ما</span>
+                        <h2 class="text-[32px]/[44px] font-bold mb-6">ویژگی‌های موسسه زبان معرفت</h2>
+                        <p class="mb-14">ما در موسسه معرفت با نگاهی عمیق به فرآیند آموزش، توانسته‌ایم تا امروز:</p>
+                    </div>
+                    <div class="grid grid-cols-12 gap-6 lg:gap-[42px]">
+                        <div class="col-span-12 lg:col-span-4 bg-white p-6 rounded-4xl shadow-neutral-10 text-justify">
+                            <img src="/svg/users.svg" alt="users" class="size-20 object-cover mb-6" />
+                            <h3 class="text-neutral-10 text-[22px]/[32px] font-bold mb-4">+100 زبان آموز موفق آیلتس</h3>
+                            <p class="text-base/[24px] tracking-[0.25px] text-neutral-50">توانسته ایم بیش از 100 زبان آموز موفق آیلتس با نمرات قابل قبول (6.5 تا 8) را تربیت کنیم.</p>
+                        </div>
+                        <div class="col-span-12 lg:col-span-4 bg-white p-6 rounded-4xl shadow-neutral-10 text-justify">
+                            <img src="/svg/school.svg" alt="school" class="size-20 object-cover mb-6" />
+                            <h3 class="text-neutral-10 text-[22px]/[32px] font-bold mb-4">+600 مدرس زبان</h3>
+                            <p class="text-base/[24px] tracking-[0.25px] text-neutral-50">توانسته ایم بیش از 600 مدرس زبان را در قالب دوره‌های جامع تربیت مدرس (TTC) آموزش دهیم.</p>
+                        </div>
+                        <div class="col-span-12 lg:col-span-4 bg-white p-6 rounded-4xl shadow-neutral-10 text-justify">
+                            <img src="/svg/airplane.svg" alt="airplane" class="size-20 object-cover mb-6" />
+                            <h3 class="text-neutral-10 text-[22px]/[32px] font-bold mb-4">درصد بالای مهاجرت، ورود به دانشگاه</h3>
+                            <p class="text-base/[24px] tracking-[0.25px] text-neutral-50">توانسته ایم درصد بالایی از زبان‌آموزان را برای ورود به دانشگاه‌ها، مهاجرت و اشتغال بین‌المللی آماده سازیم.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         <script type="module" src="/src/main.js"></script>
     </body>
 

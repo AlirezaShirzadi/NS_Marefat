@@ -1,6 +1,8 @@
 @import "tailwindcss";
+
 @import '../public/css/font.css';
 @import '../public/css/button.css';
+@import '../public/css/utility.css';
 
 @source "./../node_modules/preline/dist/*.js";
 @import "./../node_modules/preline/variants.css";
@@ -11,8 +13,15 @@
 
     /* colors */
     --color-neutral-10: #1A1A1A;
+    --color-neutral-30: #4D4D4D;
+    --color-neutral-50: #808080;
     --color-neutral-80: #ccc;
     --color-blue-normal: #00A8F5;
+    --color-blue-hover: #0097dd;
+    --color-green-normal: #00BA5B;
+    --color-green-hover: #00a752;
+    --color-orange-normal: #FF5B33;
+    --color-orange-hover: #e6522e;
 
     /* shadow */
     --shadow-neutral-10: 0 4px 40px 0 rgba(77, 77, 77, 0.08);
