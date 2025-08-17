@@ -9,3 +9,7 @@
 .btn-lg {
     @apply inline-flex items-center justify-center gap-2 py-5 px-10 bg-blue-normal border border-blue-normal text-white rounded-2xl h-16 hover:bg-blue-hover hover:text-white transition-colors;
 }
+
+.btn-white {
+    @apply inline-flex items-center justify-center gap-2 py-5 px-10 bg-white border border-white text-blue-normal rounded-2xl h-16 hover:bg-white hover:text-blue-normal transition-colors;
+}
