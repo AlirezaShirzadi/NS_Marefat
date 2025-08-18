@@ -1,0 +1,9 @@
+.slick-dots {
+    li {
+        button {
+            &::before {
+                color: #00A8F5 !important;
+            }
+        }
+    }
+}

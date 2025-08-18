@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
-@import 'css/font.css';
-@import 'css/button.css';
-@import 'css/utility.css';
+@import './css/font.css';
+@import './css/button.css';
+@import './css/utility.css';
+@import './css/slider.css';
 
 @source "./../node_modules/preline/dist/*.js";
 @import "./../node_modules/preline/variants.css";
