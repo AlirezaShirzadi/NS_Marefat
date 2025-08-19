@@ -12,6 +12,29 @@
         <!-- Icons -->
         <div class="hidden">
             <svg>
+                <symbol id="icon-tick-orange" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
+                    <path d="M18.3333 9.99984C18.3333 14.6022 14.6024 18.3332 10 18.3332C5.39763 18.3332 1.66667 14.6022 1.66667 9.99984C1.66667 5.39746 5.39763 1.6665 10 1.6665C14.6024 1.6665 18.3333 5.39746 18.3333 9.99984Z"
+                          fill="#FFEBE5"/>
+                    <path d="M13.3586 7.47456C13.6027 7.71864 13.6027 8.11437 13.3586 8.35845L9.19194 12.5251C8.94786 12.7692 8.55213 12.7692 8.30806 12.5251L6.64139 10.8584C6.39731 10.6144 6.39731 10.2186 6.64139 9.97456C6.88547 9.73048 7.2812 9.73048 7.52527 9.97456L8.75 11.1993L10.6124 9.33692L12.4747 7.47456C12.7188 7.23048 13.1145 7.23048 13.3586 7.47456Z"
+                          fill="#FF5B33"/>
+                </symbol>
+                <symbol id="icon-tick-green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
+                    <path d="M18.3333 9.99984C18.3333 14.6022 14.6024 18.3332 9.99999 18.3332C5.39762 18.3332 1.66666 14.6022 1.66666 9.99984C1.66666 5.39746 5.39762 1.6665 9.99999 1.6665C14.6024 1.6665 18.3333 5.39746 18.3333 9.99984Z"
+                          fill="#E5FFF2"/>
+                    <path d="M13.3586 7.47456C13.6027 7.71864 13.6027 8.11437 13.3586 8.35845L9.19195 12.5251C8.94787 12.7692 8.55215 12.7692 8.30807 12.5251L6.6414 10.8584C6.39732 10.6144 6.39732 10.2186 6.6414 9.97456C6.88548 9.73048 7.28121 9.73048 7.52529 9.97456L8.75001 11.1993L10.6124 9.33692L12.4747 7.47456C12.7188 7.23048 13.1145 7.23048 13.3586 7.47456Z"
+                          fill="#00BA5B"/>
+                </symbol>
+                <symbol id="icon-tick-blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
+                    <path d="M18.3334 9.99984C18.3334 14.6022 14.6024 18.3332 10 18.3332C5.39765 18.3332 1.66669 14.6022 1.66669 9.99984C1.66669 5.39746 5.39765 1.6665 10 1.6665C14.6024 1.6665 18.3334 5.39746 18.3334 9.99984Z"
+                          fill="#E5F7FF"/>
+                    <path d="M13.3586 7.47456C13.6027 7.71864 13.6027 8.11437 13.3586 8.35845L9.19192 12.5251C8.94784 12.7692 8.55212 12.7692 8.30804 12.5251L6.64137 10.8584C6.39729 10.6144 6.39729 10.2186 6.64137 9.97456C6.88545 9.73048 7.28118 9.73048 7.52525 9.97456L8.74998 11.1993L10.6123 9.33692L12.4747 7.47456C12.7188 7.23048 13.1145 7.23048 13.3586 7.47456Z"
+                          fill="#00AAE9"/>
+                </symbol>
+                <symbol id="icon-arrow-left-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M5.25 6C5.25 5.58579 5.58579 5.25 6 5.25H15C15.4142 5.25 15.75 5.58579 15.75 6C15.75 6.41421 15.4142 6.75 15 6.75H7.81066L18.5303 17.4697C18.8232 17.7626 18.8232 18.2374 18.5303 18.5303C18.2374 18.8232 17.7626 18.8232 17.4697 18.5303L6.75 7.81066V15C6.75 15.4142 6.41421 15.75 6 15.75C5.58579 15.75 5.25 15.4142 5.25 15V6Z"
+                          fill="currentColor"/>
+                </symbol>
                 <symbol id="icon-user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M9 0.9375C7.03249 0.9375 5.4375 2.53249 5.4375 4.5C5.4375 6.46751 7.03249 8.0625 9 8.0625C10.9675 8.0625 12.5625 6.46751 12.5625 4.5C12.5625 2.53249 10.9675 0.9375 9 0.9375ZM6.5625 4.5C6.5625 3.15381 7.65381 2.0625 9 2.0625C10.3462 2.0625 11.4375 3.15381 11.4375 4.5C11.4375 5.84619 10.3462 6.9375 9 6.9375C7.65381 6.9375 6.5625 5.84619 6.5625 4.5Z"
@@ -306,10 +329,11 @@
             <section
                     class="section-home-feature relative py-6 lg:py-20 bg-gradient-to-b from-green-normal from-80% to-transparent to-80% after:content-[''] after:absolute after:inset-0 after:size-full after:bg-[url('./../public/img/rec-bg.png')] after:bg-center after:bg-no-repeat after:bg-cover">
                 <div class="relative container mx-auto max-md:px-2">
-                    <div class="text-center text-white text-base/[24px] tracking-[0.25px]">
-                        <span class="block mb-4">ویژگی‌های ما</span>
-                        <h2 class="text-2xl lg:text-[32px]/[44px] font-bold mb-6">ویژگی‌های موسسه زبان معرفت</h2>
-                        <p class="mb-14">ما در موسسه معرفت با نگاهی عمیق به فرآیند آموزش، توانسته‌ایم تا امروز:</p>
+                    <div class="heading-group -center -light">
+                        <span class="h-label">ویژگی‌های ما</span>
+                        <h2 class="h-title">ویژگی‌های موسسه زبان معرفت</h2>
+                        <p class="h-desc mb-14">ما در موسسه معرفت با نگاهی عمیق به فرآیند آموزش، توانسته‌ایم تا
+                            امروز:</p>
                     </div>
                     <div class="grid grid-cols-12 gap-6 lg:gap-[42px]">
                         <div class="col-span-12 lg:col-span-4 bg-white p-6 rounded-4xl shadow-neutral-10 text-justify">
@@ -339,11 +363,11 @@
                 <div class="relative container mx-auto max-md:px-2">
                     <div class="grid grid-cols-12 gap-5 items-center">
                         <div class="col-span-12 lg:col-span-6 order-2 lg:order-1">
-                            <div class="text-neutral-50 text-base/[24px] tracking-[0.25px]">
-                                <span class="block mb-4">درباره ما</span>
-                                <h2 class="text-neutral-10 text-2xl lg:text-[32px]/[44px] font-bold mb-6">موسسه زبان
+                            <div class="heading-group -start">
+                                <span class="h-label">درباره ما</span>
+                                <h2 class="h-title">موسسه زبان
                                     معرفت</h2>
-                                <p class="text-justify text-neutral-30 mb-6">لورم ایپسوم متن ساختگی با تولید سادگی
+                                <p class="h-desc mb-6">لورم ایپسوم متن ساختگی با تولید سادگی
                                     نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
                                     مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز است. لورم
                                     ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
@@ -382,9 +406,9 @@
 
             <section class="section-home-teacher py-6 lg:py-20">
                 <div class="relative container mx-auto max-md:px-2">
-                    <div class="text-center">
-                        <span class="block text-base/[24px] tracking-[0.25px] text-neutral-50 mb-4">اساتید ما</span>
-                        <h2 class="text-2xl lg:text-[32px]/[44px] font-bold mb-8">معرفی اساتید موسسه معرفت</h2>
+                    <div class="heading-group -center">
+                        <span class="h-label">اساتید ما</span>
+                        <h2 class="h-title mb-8">معرفی اساتید موسسه معرفت</h2>
                     </div>
                     <div>
                         <div class="border-b border-neutral-80 w-max mx-auto">
@@ -608,51 +632,77 @@
 
             <section class="section-home-path py-6 lg:py-20">
                 <div class="relative container mx-auto max-md:px-2">
-                    <span class="block mb-4 text-base/[24px] tracking-[0.25px] text-neutral-50 text-center">نقشه راه</span>
-                    <h2 class="text-2xl lg:text-[32px]/[44px] font-bold text-neutral-10 text-justify mb-14 lg:text-center!">
-                        نقشه راه آموزشی کودکان در زبان معرفت</h2>
+                    <div class="heading-group -center">
+                        <span class="h-label">نقشه راه</span>
+                        <h2 class="h-title mb-14">نقشه راه آموزشی کودکان در زبان معرفت</h2>
+                    </div>
                     <div class="grid grid-cols-12 gap-6 relative">
-                        <div class="hidden lg:block absolute top-0 bottom-0 my-auto -z-10" style="background: linear-gradient(90deg, #FF5B33 34.08%, #00BA5B 40.55%, #00BA5B 59.97%, #00A8F5 66.44%); width: 100%; height: 4px"></div>
+                        <div class="hidden lg:block absolute top-0 bottom-0 my-auto -z-10"
+                             style="background: linear-gradient(90deg, #FF5B33 34.08%, #00BA5B 40.55%, #00BA5B 59.97%, #00A8F5 66.44%); width: 100%; height: 4px"></div>
                         <div class="col-span-12 sm:col-span-4 xl:col-span-2">
                             <div class="relative p-4 rounded-[32px] bg-white shadow-neutral-10 text-center h-full">
-                                <img src="/img/number1.webp" alt="number1" class="size-[60px] object-cover mx-auto mb-4" />
-                                <h3 class="text-neutral text-sm/[22px] font-bold tracking-[0.1px] mb-2">شروع طلایی: ترم‌های پیش‌دبستانی (5 تا 6 سال)</h3>
-                                <div class="block xl:absolute mx-auto left-0 right-0 -bottom-[19px] lg:text-nowrap bg-[#E5F7FF] text-blue-normal text-sm/[22px] font-bold tracking-[0.1px] py-2 px-6 w-[calc(100%-38px)] rounded-3xl">2 ترم Little Pockets</div>
+                                <img src="/img/number1.webp" alt="number1"
+                                     class="size-[60px] object-cover mx-auto mb-4"/>
+                                <h3 class="text-neutral text-sm/[22px] font-bold tracking-[0.1px] mb-2">شروع طلایی:
+                                    ترم‌های پیش‌دبستانی (5 تا 6 سال)</h3>
+                                <div class="block xl:absolute mx-auto left-0 right-0 -bottom-[19px] lg:text-nowrap bg-[#E5F7FF] text-blue-normal text-sm/[22px] font-bold tracking-[0.1px] py-2 px-6 w-[calc(100%-38px)] rounded-3xl">
+                                    2 ترم Little Pockets
+                                </div>
                             </div>
                         </div>
                         <div class="col-span-12 sm:col-span-4 xl:col-span-2">
                             <div class="relative p-4 rounded-[32px] bg-white shadow-neutral-10 text-center h-full">
-                                <img src="/img/number2.webp" alt="number2" class="size-[60px] object-cover mx-auto mb-4" />
-                                <h3 class="text-neutral text-sm/[22px] font-bold tracking-[0.1px] mb-2">پایه‌سازی زبان در سنین دبستان (۶ تا ۸ سال)</h3>
-                                <div class="block xl:absolute mx-auto left-0 right-0 -bottom-[19px] lg:text-nowrap bg-[#E5F7FF] text-blue-normal text-sm/[22px] font-bold tracking-[0.1px] py-2 px-6 w-[calc(100%-38px)] rounded-3xl">۹ ترم کتاب‌های Pockets</div>
+                                <img src="/img/number2.webp" alt="number2"
+                                     class="size-[60px] object-cover mx-auto mb-4"/>
+                                <h3 class="text-neutral text-sm/[22px] font-bold tracking-[0.1px] mb-2">پایه‌سازی زبان
+                                    در سنین دبستان (۶ تا ۸ سال)</h3>
+                                <div class="block xl:absolute mx-auto left-0 right-0 -bottom-[19px] lg:text-nowrap bg-[#E5F7FF] text-blue-normal text-sm/[22px] font-bold tracking-[0.1px] py-2 px-6 w-[calc(100%-38px)] rounded-3xl">
+                                    ۹ ترم کتاب‌های Pockets
+                                </div>
                             </div>
                         </div>
                         <div class="col-span-12 sm:col-span-4 xl:col-span-2">
                             <div class="relative p-4 rounded-[32px] bg-white shadow-neutral-10 text-center h-full">
-                                <img src="/img/number3.webp" alt="number3" class="size-[60px] object-cover mx-auto mb-4" />
-                                <h3 class="text-neutral text-sm/[22px] font-bold tracking-[0.1px] mb-2">تقویت مهارت خواندن با سیستم فونیکس (۷ تا ۹ سال)</h3>
-                                <div class="block xl:absolute mx-auto left-0 right-0 -bottom-[19px] lg:text-nowrap bg-[#F0FFF7] text-green-normal text-sm/[22px] font-bold tracking-[0.1px] py-2 px-6 w-[calc(100%-38px)] rounded-3xl">۷ ترم Jolly Phonics</div>
+                                <img src="/img/number3.webp" alt="number3"
+                                     class="size-[60px] object-cover mx-auto mb-4"/>
+                                <h3 class="text-neutral text-sm/[22px] font-bold tracking-[0.1px] mb-2">تقویت مهارت
+                                    خواندن با سیستم فونیکس (۷ تا ۹ سال)</h3>
+                                <div class="block xl:absolute mx-auto left-0 right-0 -bottom-[19px] lg:text-nowrap bg-[#F0FFF7] text-green-normal text-sm/[22px] font-bold tracking-[0.1px] py-2 px-6 w-[calc(100%-38px)] rounded-3xl">
+                                    ۷ ترم Jolly Phonics
+                                </div>
                             </div>
                         </div>
                         <div class="col-span-12 sm:col-span-4 xl:col-span-2">
                             <div class="relative p-4 rounded-[32px] bg-white shadow-neutral-10 text-center h-full">
-                                <img src="/img/number4.webp" alt="number4" class="size-[60px] object-cover mx-auto mb-4" />
-                                <h3 class="text-neutral text-sm/[22px] font-bold tracking-[0.1px] mb-2">تثبیت زبان و تقویت تعامل (۸ تا ۱۰ سال)</h3>
-                                <div class="block xl:absolute mx-auto left-0 right-0 -bottom-[19px] lg:text-nowrap bg-[#F0FFF7] text-green-normal text-sm/[22px] font-bold tracking-[0.1px] py-2 px-6 w-[calc(100%-38px)] rounded-3xl">۹ ترم First Friends</div>
+                                <img src="/img/number4.webp" alt="number4"
+                                     class="size-[60px] object-cover mx-auto mb-4"/>
+                                <h3 class="text-neutral text-sm/[22px] font-bold tracking-[0.1px] mb-2">تثبیت زبان و
+                                    تقویت تعامل (۸ تا ۱۰ سال)</h3>
+                                <div class="block xl:absolute mx-auto left-0 right-0 -bottom-[19px] lg:text-nowrap bg-[#F0FFF7] text-green-normal text-sm/[22px] font-bold tracking-[0.1px] py-2 px-6 w-[calc(100%-38px)] rounded-3xl">
+                                    ۹ ترم First Friends
+                                </div>
                             </div>
                         </div>
                         <div class="col-span-12 sm:col-span-4 xl:col-span-2">
                             <div class="relative p-4 rounded-[32px] bg-white shadow-neutral-10 text-center h-full">
-                                <img src="/img/number5.webp" alt="number5" class="size-[60px] object-cover mx-auto mb-4" />
-                                <h3 class="text-neutral text-sm/[22px] font-bold tracking-[0.1px] mb-2">تسلط بر ۴ مهارت اصلی (۹ تا ۱۲ سال)</h3>
-                                <div class="block xl:absolute mx-auto left-0 right-0 -bottom-[19px] lg:text-nowrap bg-[#FFF3F0] text-orange-normal text-sm/[22px] font-bold tracking-[0.1px] py-2 px-6 w-[calc(100%-38px)] rounded-3xl">۲۰ ترم Family and Friends</div>
+                                <img src="/img/number5.webp" alt="number5"
+                                     class="size-[60px] object-cover mx-auto mb-4"/>
+                                <h3 class="text-neutral text-sm/[22px] font-bold tracking-[0.1px] mb-2">تسلط بر ۴ مهارت
+                                    اصلی (۹ تا ۱۲ سال)</h3>
+                                <div class="block xl:absolute mx-auto left-0 right-0 -bottom-[19px] lg:text-nowrap bg-[#FFF3F0] text-orange-normal text-sm/[22px] font-bold tracking-[0.1px] py-2 px-6 w-[calc(100%-38px)] rounded-3xl">
+                                    ۲۰ ترم Family and Friends
+                                </div>
                             </div>
                         </div>
                         <div class="col-span-12 sm:col-span-4 xl:col-span-2">
                             <div class="relative p-4 rounded-[32px] bg-white shadow-neutral-10 text-center h-full">
-                                <img src="/img/number6.webp" alt="number6" class="size-[60px] object-cover mx-auto mb-4" />
-                                <h3 class="text-neutral text-sm/[22px] font-bold tracking-[0.1px] mb-2">یک ترم طلایی برای تقویت مکالمه</h3>
-                                <div class="block xl:absolute mx-auto left-0 right-0 -bottom-[19px] lg:text-nowrap bg-[#FFF3F0] text-orange-normal text-sm/[22px] font-bold tracking-[0.1px] py-2 px-6 w-[calc(100%-38px)] rounded-3xl">Speaking Boost</div>
+                                <img src="/img/number6.webp" alt="number6"
+                                     class="size-[60px] object-cover mx-auto mb-4"/>
+                                <h3 class="text-neutral text-sm/[22px] font-bold tracking-[0.1px] mb-2">یک ترم طلایی
+                                    برای تقویت مکالمه</h3>
+                                <div class="block xl:absolute mx-auto left-0 right-0 -bottom-[19px] lg:text-nowrap bg-[#FFF3F0] text-orange-normal text-sm/[22px] font-bold tracking-[0.1px] py-2 px-6 w-[calc(100%-38px)] rounded-3xl">
+                                    Speaking Boost
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -667,8 +717,12 @@
                             <h2 class="text-2xl lg:text-[32px]/[44px] font-bold text-neutral-10 text-justify mb-6">
                                 دپارتمان تخصصی آموزش نوجوانان</h2>
                             <div class="mb-18 text-base/[24px] tracking-[0.25px] text-neutral-30 text-justify lg:text-start">
-                                <p>در دپارتمان نوجوانان، ما باور داریم آموزش زبان دوم در این سن نه‌تنها باید دقیق و علمی باشد، بلکه لازم است با شناخت عمیق از دنیای نوجوانان همراه شود. بنابراین برنامه‌ی آموزشی ما ترکیبی‌ست از منابع معتبر جهانی، متدهای تدریس نوین، و فضایی پویا که نوجوان در آن احساس امنیت، اعتماد و انگیزه می‌کند.</p>
-                                <p>نکته مهم این دوره‌ها، تمرکز ویژه بر تقویت لهجه بریتیش است که از همان ابتدا در تلفظ، شنیدار، و مکالمه‌ها لحاظ می‌شود.</p></div>
+                                <p>در دپارتمان نوجوانان، ما باور داریم آموزش زبان دوم در این سن نه‌تنها باید دقیق و علمی
+                                    باشد، بلکه لازم است با شناخت عمیق از دنیای نوجوانان همراه شود. بنابراین برنامه‌ی
+                                    آموزشی ما ترکیبی‌ست از منابع معتبر جهانی، متدهای تدریس نوین، و فضایی پویا که نوجوان
+                                    در آن احساس امنیت، اعتماد و انگیزه می‌کند.</p>
+                                <p>نکته مهم این دوره‌ها، تمرکز ویژه بر تقویت لهجه بریتیش است که از همان ابتدا در تلفظ،
+                                    شنیدار، و مکالمه‌ها لحاظ می‌شود.</p></div>
                             <div class="flex flex-wrap gap-2 items-center justify-between">
                                 <figure>
                                     <img src="/img/12to17.webp" alt="12to17" class="w-full max-h-[68px] object-cover"/>
@@ -682,6 +736,426 @@
                                 <img src="/img/teen-banner.webp" alt="teen-banner"
                                      class="lg:pe-[60px] size-full rounded-[50px] object-cover"/>
                             </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-home-path py-6 lg:py-20">
+                <div class="relative container mx-auto max-md:px-2">
+                    <div class="heading-group -center mb-14">
+                        <span class="h-label">نقشه راه</span>
+                        <h2 class="h-title">سطوح آموزشی و ترم‌بندی دوره‌های نوجوانان</h2>
+                        <p class="h-desc">هر سطح از کتاب‌های Solutions در 6 ترم آموزشی تدریس می‌شود.</p>
+                    </div>
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-12 lg:col-span-4 order-2 lg:order-1">
+                            <div class="bg-white p-6 rounded-[32px] shadow-neutral-10 h-full">
+                                <div class="flex items-center justify-between mb-4">
+                                    <img src="/img/number1.webp" alt="number1" class="size-[60px] object-cover"/>
+                                    <div class="flex items-center justify-center">
+                                        <svg class="text-neutral-10 size-6">
+                                            <use href="#icon-arrow-left-up"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <h3 class="text-base/[24px] font-bold tracking-[0.15px] text-neutral-10 mb-4">سطح
+                                    Elementary (ترم‌های 1 تا 6)</h3>
+                                <div>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-blue"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">ایجاد پایه‌ای
+                                                محکم در گرامر، واژگان و مکالمه‌های ابتدایی</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-blue"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">تمرین تلفظ صحیح
+                                                بریتیش از اولین جلسات</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-blue"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">فعالیت‌های متنوع
+                                                برای درک مطلب و تقویت اعتماد به نفس</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-blue"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">طراحی کلاس‌ها
+                                                به‌صورت گروهی و مشارکتی برای فعال‌سازی زبان‌آموز</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 lg:col-span-4 order-1 lg:order-2">
+                            <div class="h-full flex items-center justify-center">
+                                <div>
+                                    <img src="/img/level.webp" alt="level"
+                                         class="size-[100px] object-cover mb-6 mx-auto"/>
+                                    <h3 class="text-[22px]/[32px] font-bold text-neutral-10 w-full max-w-[228px] text-center">
+                                        سطوح آموزشی و ترم‌بندی دوره‌های نوجوانان</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 lg:col-span-4 order-3">
+                            <div class="bg-white p-6 rounded-[32px] shadow-neutral-10 h-full">
+                                <div class="flex items-center justify-between mb-4">
+                                    <img src="/img/number2.webp" alt="number2" class="size-[60px] object-cover"/>
+                                    <div class="flex items-center justify-center">
+                                        <svg class="text-neutral-10 size-6">
+                                            <use href="#icon-arrow-left-up"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <h3 class="text-base/[24px] font-bold tracking-[0.15px] text-neutral-10 mb-4">سطح
+                                    Pre-Intermediate (ترم‌های ۷ تا ۱۲)</h3>
+                                <div>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-blue"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">تقویت مهارت‌های
+                                                زبانی در موضوعات واقعی‌تر و ملموس برای نوجوانان</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-blue"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">آموزش نوشتن
+                                                متن‌های ساختارمند و استفاده صحیح از زبان در موقعیت‌های روزمره</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-blue"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">تحلیل فایل‌های
+                                                شنیداری و تمرین‌های گفت‌وگو در موقعیت‌های نیمه‌رسمی</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-blue"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">افزایش مهارت
+                                                شنیدار از منابع بریتیش‌اوریجینال</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 lg:col-span-4 order-4">
+                            <div class="bg-white p-6 rounded-[32px] shadow-neutral-10 h-full">
+                                <div class="flex items-center justify-between mb-4">
+                                    <img src="/img/number3.webp" alt="number3" class="size-[60px] object-cover"/>
+                                    <div class="flex items-center justify-center">
+                                        <svg class="text-neutral-10 size-6">
+                                            <use href="#icon-arrow-left-up"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <h3 class="text-base/[24px] font-bold tracking-[0.15px] text-neutral-10 mb-4">سطح
+                                    Intermediate (ترم‌های ۱۳ تا ۱۸)</h3>
+                                <div>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-green"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">توانایی شرکت در
+                                                بحث‌های آزاد، دفاع از نظرات و ارائه استدلال</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-green"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">توسعه واژگان
+                                                موضوع‌محور (اجتماعی، فرهنگی، آموزشی و...)</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-green"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">تمرکز بر نگارش
+                                                تحلیلی و رسمی‌تر (مقالات، نامه‌ها، انشاهای ساختارمند)</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-green"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">استفاده از
+                                                فیلم‌های بریتیش، پروژه‌های تیمی و سخنرانی کوتاه</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 lg:col-span-4 order-5">
+                            <div class="bg-white p-6 rounded-[32px] shadow-neutral-10 h-full">
+                                <div class="flex items-center justify-between mb-4">
+                                    <img src="/img/number4.webp" alt="number4" class="size-[60px] object-cover"/>
+                                    <div class="flex items-center justify-center">
+                                        <svg class="text-neutral-10 size-6">
+                                            <use href="#icon-arrow-left-up"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <h3 class="text-base/[24px] font-bold tracking-[0.15px] text-neutral-10 mb-4">سطح
+                                    Upper-Intermediate (ترم‌های ۱۹ تا ۲۴)</h3>
+                                <div>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-green"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">آماده‌سازی
+                                                زبان‌آموز برای استفاده حرفه‌ای از زبان</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-green"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">نگارش پیشرفته،
+                                                تحلیل متون سطح بالا، درک فایل‌های صوتی و تصویری پیچیده</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-green"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">تمرین ارائه
+                                                کنفرانس، مقاله‌نویسی، و گفت‌وگو در موضوعات جهانی</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-green"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">آمادگی پایه برای
+                                                ورود به دوره‌های آیلتس یا بزرگسالان حرفه‌ای</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 lg:col-span-4 order-6">
+                            <div class="bg-white p-6 rounded-[32px] shadow-neutral-10 h-full">
+                                <div class="flex items-center justify-between mb-4">
+                                    <img src="/img/number5.webp" alt="number5" class="size-[60px] object-cover"/>
+                                    <div class="flex items-center justify-center">
+                                        <svg class="text-neutral-10 size-6">
+                                            <use href="#icon-arrow-left-up"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <h3 class="text-base/[24px] font-bold tracking-[0.15px] text-neutral-10 mb-4">سطح
+                                    Advanced (ترم‌های ٢۵ تا ٣٠)</h3>
+                                <div>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-orange"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">سطح پیشرفته زبان
+                                                اگلیسی</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-orange"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">نگارش هر نوع
+                                                متنی با هر ساختاری اعم از رسمی و غیر رسمی و دوستانه</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-orange"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">توانایی ارائه
+                                                کنفرانس، مقاله‌نویسی، و گفت‌وگو در موضوعات جهانی</p>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <svg class="size-5">
+                                                <use href="#icon-tick-orange"/>
+                                            </svg>
+                                            <p class="text-sm/[20px] tracking-[0.25px] text-neutral-50">آمادگی کامل برای
+                                                ورود به دوره‌های آیلتس یا بزرگسالان حرفه‌ای</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                    class="section-home-feature relative py-6 lg:py-10 bg-gradient-to-b from-[#BF4426] from-75% to-transparent to-75% after:content-[''] after:absolute after:inset-0 after:size-full after:bg-[url('./../public/img/rec-bg.png')] after:bg-center after:bg-no-repeat after:bg-cover">
+                <div class="relative container mx-auto max-md:px-2">
+                    <div class="flex flex-col lg:flex-row items-center justify-between mb-14">
+                        <div class="heading-group text-center lg:text-start -light">
+                            <span class="h-label">نظرات زبان‌آموزان ما</span>
+                            <h2 class="h-title">رضایت زبان‌آموزان موسسه معرفت</h2>
+                        </div>
+                        <nav class="flex gap-x-6 z-50" aria-label="Tabs" role="tablist" aria-orientation="horizontal">
+                            <button type="button"
+                                    class="hs-tab-active:bg-white hs-tab-active:text-black hs-tab-active:hover:text-black py-3 px-6 inline-flex items-center gap-x-2 bg-[#FFFFFF33] text-sm font-medium text-center text-white hover:text-white focus:outline-hidden focus:text-black rounded-xl disabled:opacity-50 disabled:pointer-events-none active"
+                                    id="pills-with-brand-color-item-1" aria-selected="true"
+                                    data-hs-tab="#pills-with-brand-color-1" aria-controls="pills-with-brand-color-1"
+                                    role="tab">
+                                آموزش کودکان
+                            </button>
+                            <button type="button"
+                                    class="hs-tab-active:bg-white hs-tab-active:text-black hs-tab-active:hover:text-black py-3 px-6 inline-flex items-center gap-x-2 bg-[#FFFFFF33] text-sm font-medium text-center text-white hover:text-white focus:outline-hidden focus:text-black rounded-xl disabled:opacity-50 disabled:pointer-events-none"
+                                    id="pills-with-brand-color-item-2" aria-selected="false"
+                                    data-hs-tab="#pills-with-brand-color-2" aria-controls="pills-with-brand-color-2"
+                                    role="tab">
+                                آموزش بزرگسالان
+                            </button>
+                        </nav>
+                    </div>
+                    <div class="mt-3">
+                        <div id="pills-with-brand-color-1" role="tabpanel"
+                             aria-labelledby="pills-with-brand-color-item-1">
+                            <div class="grid grid-cols-12 gap-5">
+                                <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+                                    <div class="p-4 bg-white rounded-3xl shadow-neutral-10">
+                                        <div class="flex items-center gap-4 mb-4">
+                                            <img src="/temp/user1.png" alt="user1"
+                                                 class="size-[60px] rounded-full object-cover"/>
+                                            <div>
+                                                <h3 class="text-base/[24px] tracking-[0.15px] font-bold">اسم زبان
+                                                    آموز</h3>
+                                                <div class="text-sm/[20px] tracking-[0.25px]">سطح زبان</div>
+                                            </div>
+                                        </div>
+                                        <p class="text-sm/[22px] tracking-[0.1px] font-medium text-neutral-30">لورم
+                                            ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                            گرافیک است چاپگرها و متون بلکه روزنامه و مجله.</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+                                    <div class="p-4 bg-white rounded-3xl shadow-neutral-10">
+                                        <div class="flex items-center gap-4 mb-4">
+                                            <img src="/temp/user2.png" alt="user2"
+                                                 class="size-[60px] rounded-full object-cover"/>
+                                            <div>
+                                                <h3 class="text-base/[24px] tracking-[0.15px] font-bold">اسم زبان
+                                                    آموز</h3>
+                                                <div class="text-sm/[20px] tracking-[0.25px]">سطح زبان</div>
+                                            </div>
+                                        </div>
+                                        <p class="text-sm/[22px] tracking-[0.1px] font-medium text-neutral-30">لورم
+                                            ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                            گرافیک است چاپگرها و متون بلکه روزنامه و مجله.</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+                                    <div class="p-4 bg-white rounded-3xl shadow-neutral-10">
+                                        <div class="flex items-center gap-4 mb-4">
+                                            <img src="/temp/user3.png" alt="user3"
+                                                 class="size-[60px] rounded-full object-cover"/>
+                                            <div>
+                                                <h3 class="text-base/[24px] tracking-[0.15px] font-bold">اسم زبان
+                                                    آموز</h3>
+                                                <div class="text-sm/[20px] tracking-[0.25px]">سطح زبان</div>
+                                            </div>
+                                        </div>
+                                        <p class="text-sm/[22px] tracking-[0.1px] font-medium text-neutral-30">لورم
+                                            ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                            گرافیک است چاپگرها و متون بلکه روزنامه و مجله.</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+                                    <div class="p-4 bg-white rounded-3xl shadow-neutral-10">
+                                        <div class="flex items-center gap-4 mb-4">
+                                            <img src="/temp/user4.png" alt="user4"
+                                                 class="size-[60px] rounded-full object-cover"/>
+                                            <div>
+                                                <h3 class="text-base/[24px] tracking-[0.15px] font-bold">اسم زبان
+                                                    آموز</h3>
+                                                <div class="text-sm/[20px] tracking-[0.25px]">سطح زبان</div>
+                                            </div>
+                                        </div>
+                                        <p class="text-sm/[22px] tracking-[0.1px] font-medium text-neutral-30">لورم
+                                            ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                            گرافیک است چاپگرها و متون بلکه روزنامه و مجله.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="pills-with-brand-color-2" class="hidden" role="tabpanel"
+                             aria-labelledby="pills-with-brand-color-item-2">
+                            <div class="grid grid-cols-12 gap-5">
+                                <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+                                    <div class="p-4 bg-white rounded-3xl shadow-neutral-10">
+                                        <div class="flex items-center gap-4 mb-4">
+                                            <img src="/temp/user1.png" alt="user1"
+                                                 class="size-[60px] rounded-full object-cover"/>
+                                            <div>
+                                                <h3 class="text-base/[24px] tracking-[0.15px] font-bold">اسم زبان
+                                                    آموز</h3>
+                                                <div class="text-sm/[20px] tracking-[0.25px]">سطح زبان</div>
+                                            </div>
+                                        </div>
+                                        <p class="text-sm/[22px] tracking-[0.1px] font-medium text-neutral-30">لورم
+                                            ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                            گرافیک است چاپگرها و متون بلکه روزنامه و مجله.</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+                                    <div class="p-4 bg-white rounded-3xl shadow-neutral-10">
+                                        <div class="flex items-center gap-4 mb-4">
+                                            <img src="/temp/user2.png" alt="user2"
+                                                 class="size-[60px] rounded-full object-cover"/>
+                                            <div>
+                                                <h3 class="text-base/[24px] tracking-[0.15px] font-bold">اسم زبان
+                                                    آموز</h3>
+                                                <div class="text-sm/[20px] tracking-[0.25px]">سطح زبان</div>
+                                            </div>
+                                        </div>
+                                        <p class="text-sm/[22px] tracking-[0.1px] font-medium text-neutral-30">لورم
+                                            ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                            گرافیک است چاپگرها و متون بلکه روزنامه و مجله.</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+                                    <div class="p-4 bg-white rounded-3xl shadow-neutral-10">
+                                        <div class="flex items-center gap-4 mb-4">
+                                            <img src="/temp/user3.png" alt="user3"
+                                                 class="size-[60px] rounded-full object-cover"/>
+                                            <div>
+                                                <h3 class="text-base/[24px] tracking-[0.15px] font-bold">اسم زبان
+                                                    آموز</h3>
+                                                <div class="text-sm/[20px] tracking-[0.25px]">سطح زبان</div>
+                                            </div>
+                                        </div>
+                                        <p class="text-sm/[22px] tracking-[0.1px] font-medium text-neutral-30">لورم
+                                            ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                            گرافیک است چاپگرها و متون بلکه روزنامه و مجله.</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-6 lg:col-span-3">
+                                    <div class="p-4 bg-white rounded-3xl shadow-neutral-10">
+                                        <div class="flex items-center gap-4 mb-4">
+                                            <img src="/temp/user4.png" alt="user4"
+                                                 class="size-[60px] rounded-full object-cover"/>
+                                            <div>
+                                                <h3 class="text-base/[24px] tracking-[0.15px] font-bold">اسم زبان
+                                                    آموز</h3>
+                                                <div class="text-sm/[20px] tracking-[0.25px]">سطح زبان</div>
+                                            </div>
+                                        </div>
+                                        <p class="text-sm/[22px] tracking-[0.1px] font-medium text-neutral-30">لورم
+                                            ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                            گرافیک است چاپگرها و متون بلکه روزنامه و مجله.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

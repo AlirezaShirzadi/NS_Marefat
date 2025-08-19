@@ -4,3 +4,37 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+/*
+  Reusable heading group utility
+  Usage:
+  <div class="heading-group -center">   // or -start, add -light for light scheme
+    <span class="h-label">Label</span>
+    <h2 class="h-title">Title</h2>
+    <p class="h-desc">Optional description</p>
+  </div>
+*/
+.heading-group {
+}
+.heading-group.-center {
+    @apply text-center;
+}
+.heading-group.-start {
+    @apply text-justify lg:text-start;
+}
+
+.heading-group .h-label {
+    @apply block text-base/[24px] tracking-[0.25px] text-neutral-50 mb-4;
+}
+.heading-group .h-title {
+    @apply font-bold text-2xl lg:text-[32px]/[44px] text-neutral-10 mb-6;
+}
+.heading-group .h-desc {
+    @apply text-base/[24px] tracking-[0.25px] text-neutral-30;
+}
+
+.heading-group.-light .h-label,
+.heading-group.-light .h-title,
+.heading-group.-light .h-desc {
+    @apply text-white;
+}
