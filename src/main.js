@@ -9,3 +9,6 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 Fancybox.bind("[data-fancybox]", {})
 Fancybox.bind("[data-fancybox='intro-videos']", {})
 Fancybox.bind("[data-fancybox='ielts']", {})
+
+// Timeline (About page)
+import './js/timeline.js'
