@@ -10,6 +10,19 @@
         <!-- Icons -->
         <div class="hidden">
             <svg>
+                <symbol id="icon-hat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
+                    <path d="M24.4568 8.74912C28.0093 7.08362 31.9905 7.08363 35.543 8.74912L52.271 16.5916C55.9097 18.2975 55.9097 24.2026 52.271 25.9085L35.5432 33.7509C31.9907 35.4164 28.0095 35.4164 24.457 33.7509L7.729 25.9084C4.09033 24.2025 4.09034 18.2974 7.72901 16.5915L24.4568 8.74912Z" stroke="currentColor" stroke-width="2"/>
+                    <path d="M5 21.25V35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M47.5 28.75V41.5636C47.5 44.0836 46.2412 46.443 44.0367 47.6639C40.3657 49.6969 34.49 52.5 30 52.5C25.51 52.5 19.6343 49.6969 15.9633 47.6639C13.7588 46.443 12.5 44.0836 12.5 41.5636V28.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </symbol>
+                <symbol id="icon-people" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none">
+                    <circle cx="30" cy="15" r="10" stroke="currentColor" stroke-width="2"/>
+                    <path d="M45 22.5C49.1421 22.5 52.5 19.7018 52.5 16.25C52.5 12.7982 49.1421 10 45 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M15 22.5C10.8579 22.5 7.5 19.7018 7.5 16.25C7.5 12.7982 10.8579 10 15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <ellipse cx="30" cy="42.5" rx="15" ry="10" stroke="currentColor" stroke-width="2"/>
+                    <path d="M50 47.5C54.3856 46.5383 57.5 44.1027 57.5 41.25C57.5 38.3973 54.3856 35.9617 50 35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M10 47.5C5.61438 46.5383 2.5 44.1027 2.5 41.25C2.5 38.3973 5.61438 35.9617 10 35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </symbol>
                 <symbol id="icon-voice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="none">
                     <path d="M14.5835 16.6667C14.5835 10.9137 19.2472 6.25 25.0002 6.25C30.7531 6.25 35.4168 10.9137 35.4168 16.6667V22.9167C35.4168 28.6696 30.7531 33.3333 25.0002 33.3333C19.2472 33.3333 14.5835 28.6696 14.5835 22.9167V16.6667Z" stroke="currentColor" stroke-width="2"/>
                     <path d="M28.1248 16.6666L35.4165 16.6666" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -483,7 +496,7 @@
             </section>
 
             <section
-                    class="section-teen-description relative py-6 lg:pt-14 lg:pb-20 bg-gradient-to-b from-[#BF4426] from-30% to-transparent to-30% after:content-[''] after:absolute after:inset-0 after:size-full after:h-[30%] after:bg-[url('./../public/img/rec-bg.png')] after:bg-top after:bg-no-repeat after:bg-cover">
+                    class="section-adult-description relative py-6 lg:pt-14 lg:pb-20 bg-gradient-to-b from-[#BF4426] from-30% to-transparent to-30% after:content-[''] after:absolute after:inset-0 after:size-full after:h-[30%] after:bg-[url('./../public/img/rec-bg.png')] after:bg-top after:bg-no-repeat after:bg-cover">
                 <div class="relative container mx-auto max-md:px-2">
                     <div class="flex items-center justify-center mb-14">
                         <div class="heading-group -center -light">
@@ -625,6 +638,61 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-adult-items py-6 lg:py-10">
+                <div class="relative container mx-auto max-md:px-2">
+                    <div class="heading-group -center mb-14">
+                        <span class="h-label">چرا دوره‌های ما</span>
+                        <h2 class="h-title">چه چیزی دوره‌های ما را متمایز می‌کند؟</h2>
+                    </div>
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-12 md:col-span-6 lg:col-span-3 lg:mb-20">
+                            <div class="bg-white rounded-4xl shadow-neutral-10 p-10 pb-16">
+                                <div class="w-full text-center">
+                                    <svg class="mx-auto size-[60px] text-blue-normal mb-8">
+                                        <use href="#icon-people" />
+                                    </svg>
+                                    <h3 class="text-[22px]/[32px] font-bold text-neutral-10 mb-4">تیم مدرسین نخبه</h3>
+                                    <p class="text-base/6 tracking-[0.25px] text-neutral-10"> اساتید مجرب با مدرک بین‌المللی</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-6 lg:col-span-3 lg:mt-20">
+                            <div class="bg-white rounded-4xl shadow-neutral-10 p-10 pb-16">
+                                <div class="w-full text-center">
+                                    <svg class="mx-auto size-[60px] text-green-normal mb-8">
+                                        <use href="#icon-hat" />
+                                    </svg>
+                                    <h3 class="text-[22px]/[32px] font-bold text-neutral-10 mb-4"> کلاس‌های پویا</h3>
+                                    <p class="text-base/6 tracking-[0.25px] text-neutral-10">فضایی پرانرژی و تشویق‌کننده</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-6 lg:col-span-3 lg:mb-20">
+                            <div class="bg-white rounded-4xl shadow-neutral-10 p-10 pb-16">
+                                <div class="w-full text-center">
+                                    <svg class="mx-auto size-[60px] text-green-normal mb-8">
+                                        <use href="#icon-headphone" />
+                                    </svg>
+                                    <h3 class="text-[22px]/[32px] font-bold text-neutral-10 mb-4">پشتیبانی ۲۴/۷</h3>
+                                    <p class="text-base/6 tracking-[0.25px] text-neutral-10">پاسخگویی به سوالات حتی خارج از کلاس</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-6 lg:col-span-3 lg:mt-20">
+                            <div class="bg-white rounded-4xl shadow-neutral-10 p-10 pb-16">
+                                <div class="w-full text-center">
+                                    <svg class="mx-auto size-[60px] text-orange-normal mb-8">
+                                        <use href="#icon-diploma" />
+                                    </svg>
+                                    <h3 class="text-[22px]/[32px] font-bold text-neutral-10 mb-4">گواهینامه معتبر</h3>
+                                    <p class="text-base/6 tracking-[0.25px] text-neutral-10">مدرک پایان دوره مورد تایید مراکز بین‌المللی</p>
                                 </div>
                             </div>
                         </div>
