@@ -10,6 +10,13 @@
         <!-- Icons -->
         <div class="hidden">
             <svg>
+                <symbol id="icon-arrow-direction" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87 24" fill="none">
+                    <path d="M20.6426 1.51367C20.2054 -0.0152721 18.1529 -0.526807 17.0566 0.636719C16.5909 1.11085 16.2365 1.65459 15.707 2.07031C12.4749 4.87666 8.78435 7.10894 5.62988 10.0088C1.79996 13.9139 -4.35484 18.1605 4.69727 20.3857C8.74932 21.5967 12.8877 22.5012 16.915 23.793C17.5151 24.0231 18.1575 24.0969 18.7588 23.8262C20.4419 23.1637 20.4214 20.4992 18.6904 19.9062C15.2267 18.7297 11.6528 17.9295 8.12988 16.957C13.0076 15.5363 17.7442 13.7369 22.7637 12.7178C29.649 11.1065 36.5252 8.74732 43.6055 8.30078C56.5111 7.8866 70.8015 10.0207 82.4023 15.8311C83.3922 19.4704 88.7133 16.7906 86.4463 13.7168C79.83 8.1333 68.8132 6.66069 60.4512 4.97266C51.0019 3.5095 41.2337 3.41664 31.9678 5.98633C26.274 7.42264 20.582 8.8603 14.9053 10.3643C13.2315 10.7482 11.6271 11.2904 10.0361 11.8467C11.0155 11.0311 12.029 10.2548 13.0703 9.51465C14.9507 7.80753 21.5334 4.24273 20.6426 1.51367Z" fill="#CCCCCC"/>
+                </symbol>
+                <symbol id="icon-circle-tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" fill="none">
+                    <path d="M22.0003 40.3332C32.0837 40.3332 40.3337 32.0832 40.3337 21.9998C40.3337 11.9165 32.0837 3.6665 22.0003 3.6665C11.917 3.6665 3.66699 11.9165 3.66699 21.9998C3.66699 32.0832 11.917 40.3332 22.0003 40.3332Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.208 21.9999L19.3963 27.1882L29.7913 16.8115" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </symbol>
                 <symbol id="icon-notebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="none">
                     <path d="M8.33301 12.5001V39.5834C8.33301 43.0352 11.1312 45.8334 14.583 45.8334H35.4163C38.8681 45.8334 41.6663 43.0352 41.6663 39.5834V18.7501C41.6663 15.2983 38.8681 12.5001 35.4163 12.5001H8.33301ZM8.33301 12.5001V10.4167"
                           stroke="currentColor" stroke-width="2"/>
@@ -844,6 +851,86 @@
                             </div>
                             <a data-fancybox class="btn-white shrink-0 font-bold group" href="/img/license.webp">
                                 <span class="tracking-[0.15px] text-md lg:text-xl/6">نمایش مدرک</span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-ttc-register py-6 lg:pt-20 lg:pb-[100px]">
+                <div class="relative container mx-auto max-md:px-2">
+                    <div class="flex items-center justify-center mb-14">
+                        <div class="heading-group -center">
+                            <span class="h-label">مسیر</span>
+                            <h2 class="h-title">فرآیند ثبت‌نام</h2>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                            <div class="text-center">
+                                <div class="relative size-[100px] outline-2 outline-blue-normal outline-offset-4 outline-dashed flex items-center justify-center mb-4 bg-blue-normal rounded-full mx-auto">
+                                    <svg class="size-[44px] text-white">
+                                        <use href="#icon-note" />
+                                    </svg>
+                                    <div class="absolute -left-5 size-10 flex items-center justify-center bg-[#EBF9FF] rounded-full outline-3 outline-white">
+                                        <span class="text-[22px]/[32px] text-neutral-10 font-bold">01</span>
+                                    </div>
+                                    <div class="absolute hidden lg:block lg:-left-[calc(100%+24px)] xl:-left-[calc(100%*2)]">
+                                        <svg class="w-[87px] h-6">
+                                            <use href="#icon-arrow-direction" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="text-[22px]/[32px] text-neutral-10 font-bold">ارسال رزومه و مدارک</p>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                            <div class="text-center">
+                                <div class="relative size-[100px] outline-2 outline-green-normal outline-offset-4 outline-dashed flex items-center justify-center mb-4 bg-green-normal rounded-full mx-auto">
+                                    <svg class="size-[44px] text-white">
+                                        <use href="#icon-user-speak" />
+                                    </svg>
+                                    <div class="absolute -left-5 size-10 flex items-center justify-center bg-[#EBFFF5] rounded-full outline-3 outline-white">
+                                        <span class="text-[22px]/[32px] text-neutral-10 font-bold">02</span>
+                                    </div>
+                                    <div class="absolute hidden lg:block lg:-left-[calc(100%+24px)] xl:-left-[calc(100%*2)]">
+                                        <svg class="w-[87px] h-6">
+                                            <use href="#icon-arrow-direction" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="text-[22px]/[32px] text-neutral-10 font-bold">انجام مصاحبه تخصصی</p>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                            <div class="text-center">
+                                <div class="relative size-[100px] outline-2 outline-orange-normal outline-offset-4 outline-dashed flex items-center justify-center mb-4 bg-orange-normal rounded-full mx-auto">
+                                    <svg class="size-[44px] text-white">
+                                        <use href="#icon-circle-tick" />
+                                    </svg>
+                                    <div class="absolute -left-5 size-10 flex items-center justify-center bg-[#FFEFEB] rounded-full outline-3 outline-white">
+                                        <span class="text-[22px]/[32px] text-neutral-10 font-bold">03</span>
+                                    </div>
+                                    <div class="absolute hidden lg:block lg:-left-[calc(100%+24px)] xl:-left-[calc(100%*2)]">
+                                        <svg class="w-[87px] h-6">
+                                            <use href="#icon-arrow-direction" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <p class="text-[22px]/[32px] text-neutral-10 font-bold">تعیین سطح علمی و عملی</p>
+                            </div>
+                        </div>
+                        <div class="col-span-12 md:col-span-6 lg:col-span-3">
+                            <div class="text-center">
+                                <div class="relative size-[100px] outline-2 outline-[#FFAB00] outline-offset-4 outline-dashed flex items-center justify-center mb-4 bg-[#FFAB00] rounded-full mx-auto">
+                                    <svg class="size-[44px] text-white">
+                                        <use href="#icon-hat" />
+                                    </svg>
+                                    <div class="absolute -left-5 size-10 flex items-center justify-center bg-[#FFEFEB] rounded-full outline-3 outline-white">
+                                        <span class="text-[22px]/[32px] text-neutral-10 font-bold">04</span>
+                                    </div>
+                                </div>
+                                <p class="text-[22px]/[32px] text-neutral-10 font-bold">شروع دوره</p>
+                            </div>
                         </div>
                     </div>
                 </div>
