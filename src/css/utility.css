@@ -38,3 +38,45 @@
 .heading-group.-light .h-desc {
     @apply text-white;
 }
+
+/* -------------------------------------------
+   Global responsive and form UX improvements
+   ------------------------------------------- */
+/* Balance long headings for better readability */
+.heading-group .h-title { text-wrap: balance; }
+
+/* Slightly scale heading sizes on small screens */
+@media (max-width: 640px) {
+  .heading-group .h-title {
+    font-size: clamp(20px, 6vw, 28px);
+    line-height: 1.35;
+  }
+}
+
+/* Show red border when fields are invalid via aria-invalid */
+input[aria-invalid="true"], textarea[aria-invalid="true"] {
+  border-color: #dc2626; /* Tailwind red-600 */
+}
+
+/* Make Google reCAPTCHA fit small screens */
+@media (max-width: 400px) {
+  .g-recaptcha { transform: scale(0.9); transform-origin: right top; }
+}
+@media (max-width: 340px) {
+  .g-recaptcha { transform: scale(0.82); }
+}
+
+
+/* Small-screen hero adjustments for shared header section */
+@media (max-width: 640px) {
+  .section-ielts-header h1 {
+    margin-bottom: 1.75rem !important; /* reduce excessive spacing on phones */
+    font-size: clamp(22px, 7vw, 28px);
+    line-height: 1.35;
+  }
+  /* Fallback small paddings when markup lacks responsive px utilities */
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
