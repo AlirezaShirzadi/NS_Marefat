@@ -22,6 +22,7 @@ export default defineConfig({
                 ielts: resolve(__dirname, "ielts.html"),
                 teen: resolve(__dirname, "teen.html"),
                 ttc: resolve(__dirname, "ttc.html"),
+                teacher: resolve(__dirname, "teacher.html"),
             },
         },
     },
