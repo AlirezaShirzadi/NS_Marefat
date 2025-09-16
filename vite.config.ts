@@ -23,6 +23,7 @@ export default defineConfig({
                 teen: resolve(__dirname, "teen.html"),
                 ttc: resolve(__dirname, "ttc.html"),
                 teacher: resolve(__dirname, "teacher.html"),
+                placement: resolve(__dirname, "placement.html"),
             },
         },
     },
