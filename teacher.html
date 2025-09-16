@@ -465,10 +465,10 @@
 
         <main>
             <section
-                    class="section-teacher-header py-6 lg:pt-20 bg-[#003B56]">
+                    class="section-teacher-header py-6 lg:pt-20 bg-gradient-to-b from-[#003B56] from-35% lg:from-60% to-transparent to-35% lg:to-60%">
                 <div class="relative container mx-auto max-md:px-2">
                     <div class="grid grid-cols-12 gap-6 mb-8">
-                        <div class="col-span-12">
+                        <div class="col-span-12 lg:col-span-7">
                             <div class="flex items-center gap-2 text-sm/[20px] tracking-[0.25px] text-neutral-80 mb-4 lg:mb-8">
                                 <a href="/"><span>صفحه اصلی</span></a>
                                 <span>/</span>
@@ -477,89 +477,216 @@
                             <h1 class="text-white text-2xl md:text-[45px]/[56px] tracking-[-0.25px] font-bold    md:mb-[66px]">
                                 اساتید موسسه زبان معرفت</h1>
                         </div>
+                        <div class="col-span-12 lg:col-span-5">
+                            <figure>
+                                <img src="/img/teachers.webp" alt="teacher" />
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section-teacher-teacher py-6 lg:py-10">
+            <section class="section-teacher-teacher py-6 lg:pb-10">
                 <div class="relative container mx-auto max-md:px-2">
-                    <div class="grid grid-cols-12 gap-6">
-                        <div class="col-span-12 sm:col-span-4 lg:col-span-3">
-                            <div class="h-full flex flex-col justify-center items-start px-2.5">
-                                <figure class="mb-4 mx-auto">
-                                    <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
-                                         src="/temp/teacher2.webp" alt="teacher2"/>
-                                </figure>
-                                <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
-                                <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
-                                    اسم استاد</h3>
-                                <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                    <div class="border-b border-neutral-80 w-max">
+                        <nav class="flex justify-center gap-x-1" aria-label="Tabs" role="tablist"
+                             aria-orientation="horizontal">
+                            <button type="button"
+                                    class="hs-tab-active:border-blue-normal hs-tab-active:text-blue-normal hs-tab-active:text-base/[24px] hs-tab-active:font-bold tracking-[0.15px] py-3 px-6 inline-flex items-center gap-x-2 border-b-2 border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-normal focus:outline-hidden focus:text-blue-normal disabled:opacity-50 disabled:pointer-events-none active"
+                                    id="tabs-with-underline-item-1" aria-selected="true"
+                                    data-hs-tab="#tabs-with-underline-1" aria-controls="tabs-with-underline-1"
+                                    role="tab">
+                                آموزش کودکان
+                            </button>
+                            <button type="button"
+                                    class="hs-tab-active:border-blue-normal hs-tab-active:text-blue-normal hs-tab-active:text-base/[24px] hs-tab-active:font-bold tracking-[0.15px] py-3 px-6 inline-flex items-center gap-x-2 border-b-2 border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-blue-normal focus:outline-hidden focus:text-blue-normal disabled:opacity-50 disabled:pointer-events-none"
+                                    id="tabs-with-underline-item-2" aria-selected="false"
+                                    data-hs-tab="#tabs-with-underline-2" aria-controls="tabs-with-underline-2"
+                                    role="tab">
+                                آموزش بزرگسالان
+                            </button>
+                        </nav>
+                    </div>
+
+                    <div class="mt-14">
+                        <div id="tabs-with-underline-1" role="tabpanel"
+                             aria-labelledby="tabs-with-underline-item-1">
+                            <div class="grid grid-cols-12 gap-6">
+                                <div class="col-span-12 sm:col-span-4 lg:col-span-3">
+                                    <div class="h-full flex flex-col justify-center items-start px-2.5">
+                                        <figure class="mb-4 mx-auto">
+                                            <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
+                                                 src="/temp/teacher2.webp" alt="teacher2"/>
+                                        </figure>
+                                        <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
+                                        <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
+                                            اسم استاد</h3>
+                                        <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-4 lg:col-span-3">
+                                    <div class="h-full flex flex-col justify-center items-start px-2.5">
+                                        <figure class="mb-4 mx-auto">
+                                            <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
+                                                 src="/temp/teacher2.webp" alt="teacher2"/>
+                                        </figure>
+                                        <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
+                                        <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
+                                            اسم استاد</h3>
+                                        <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-4 lg:col-span-3">
+                                    <div class="h-full flex flex-col justify-center items-start px-2.5">
+                                        <figure class="mb-4 mx-auto">
+                                            <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
+                                                 src="/temp/teacher2.webp" alt="teacher2"/>
+                                        </figure>
+                                        <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
+                                        <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
+                                            اسم استاد</h3>
+                                        <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-4 lg:col-span-3">
+                                    <div class="h-full flex flex-col justify-center items-start px-2.5">
+                                        <figure class="mb-4 mx-auto">
+                                            <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
+                                                 src="/temp/teacher2.webp" alt="teacher2"/>
+                                        </figure>
+                                        <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
+                                        <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
+                                            اسم استاد</h3>
+                                        <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-4 lg:col-span-3">
+                                    <div class="h-full flex flex-col justify-center items-start px-2.5">
+                                        <figure class="mb-4 mx-auto">
+                                            <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
+                                                 src="/temp/teacher2.webp" alt="teacher2"/>
+                                        </figure>
+                                        <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
+                                        <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
+                                            اسم استاد</h3>
+                                        <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-4 lg:col-span-3">
+                                    <div class="h-full flex flex-col justify-center items-start px-2.5">
+                                        <figure class="mb-4 mx-auto">
+                                            <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
+                                                 src="/temp/teacher2.webp" alt="teacher2"/>
+                                        </figure>
+                                        <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
+                                        <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
+                                            اسم استاد</h3>
+                                        <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                    </div>
+                                </div>
+                                <div class="col-span-12 sm:col-span-4 lg:col-span-3">
+                                    <div class="h-full flex flex-col justify-center items-start px-2.5">
+                                        <figure class="mb-4 mx-auto">
+                                            <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
+                                                 src="/temp/teacher2.webp" alt="teacher2"/>
+                                        </figure>
+                                        <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
+                                        <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
+                                            اسم استاد</h3>
+                                        <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
+                                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-span-12 sm:col-span-4 lg:col-span-3">
-                            <div class="h-full flex flex-col justify-center items-start px-2.5">
-                                <figure class="mb-4 mx-auto">
-                                    <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
-                                         src="/temp/teacher2.webp" alt="teacher2"/>
-                                </figure>
-                                <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
-                                <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
-                                    اسم استاد</h3>
-                                <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                        <!-- End Slider -->
+                    </div>
+                    <div id="tabs-with-underline-2" class="hidden" role="tabpanel"
+                         aria-labelledby="tabs-with-underline-item-2">
+                        <div class="grid grid-cols-12 gap-6">
+                            <div class="col-span-12 sm:col-span-4 lg:col-span-3">
+                                <div class="h-full flex flex-col justify-center items-start px-2.5">
+                                    <figure class="mb-4 mx-auto">
+                                        <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
+                                             src="/temp/teacher2.webp" alt="teacher2"/>
+                                    </figure>
+                                    <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
+                                    <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
+                                        اسم استاد</h3>
+                                    <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-span-12 sm:col-span-4 lg:col-span-3">
-                            <div class="h-full flex flex-col justify-center items-start px-2.5">
-                                <figure class="mb-4 mx-auto">
-                                    <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
-                                         src="/temp/teacher2.webp" alt="teacher2"/>
-                                </figure>
-                                <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
-                                <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
-                                    اسم استاد</h3>
-                                <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                            <div class="col-span-12 sm:col-span-4 lg:col-span-3">
+                                <div class="h-full flex flex-col justify-center items-start px-2.5">
+                                    <figure class="mb-4 mx-auto">
+                                        <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
+                                             src="/temp/teacher2.webp" alt="teacher2"/>
+                                    </figure>
+                                    <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
+                                    <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
+                                        اسم استاد</h3>
+                                    <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-span-12 sm:col-span-4 lg:col-span-3">
-                            <div class="h-full flex flex-col justify-center items-start px-2.5">
-                                <figure class="mb-4 mx-auto">
-                                    <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
-                                         src="/temp/teacher2.webp" alt="teacher2"/>
-                                </figure>
-                                <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
-                                <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
-                                    اسم استاد</h3>
-                                <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                            <div class="col-span-12 sm:col-span-4 lg:col-span-3">
+                                <div class="h-full flex flex-col justify-center items-start px-2.5">
+                                    <figure class="mb-4 mx-auto">
+                                        <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
+                                             src="/temp/teacher2.webp" alt="teacher2"/>
+                                    </figure>
+                                    <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
+                                    <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
+                                        اسم استاد</h3>
+                                    <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-span-12 sm:col-span-4 lg:col-span-3">
-                            <div class="h-full flex flex-col justify-center items-start px-2.5">
-                                <figure class="mb-4 mx-auto">
-                                    <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
-                                         src="/temp/teacher2.webp" alt="teacher2"/>
-                                </figure>
-                                <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
-                                <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
-                                    اسم استاد</h3>
-                                <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                            <div class="col-span-12 sm:col-span-4 lg:col-span-3">
+                                <div class="h-full flex flex-col justify-center items-start px-2.5">
+                                    <figure class="mb-4 mx-auto">
+                                        <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
+                                             src="/temp/teacher2.webp" alt="teacher2"/>
+                                    </figure>
+                                    <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
+                                    <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
+                                        اسم استاد</h3>
+                                    <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-span-12 sm:col-span-4 lg:col-span-3">
-                            <div class="h-full flex flex-col justify-center items-start px-2.5">
-                                <figure class="mb-4 mx-auto">
-                                    <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
-                                         src="/temp/teacher2.webp" alt="teacher2"/>
-                                </figure>
-                                <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
-                                <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
-                                    اسم استاد</h3>
-                                <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                            <div class="col-span-12 sm:col-span-4 lg:col-span-3">
+                                <div class="h-full flex flex-col justify-center items-start px-2.5">
+                                    <figure class="mb-4 mx-auto">
+                                        <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
+                                             src="/temp/teacher2.webp" alt="teacher2"/>
+                                    </figure>
+                                    <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
+                                    <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
+                                        اسم استاد</h3>
+                                    <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                </div>
+                            </div>
+                            <div class="col-span-12 sm:col-span-4 lg:col-span-3">
+                                <div class="h-full flex flex-col justify-center items-start px-2.5">
+                                    <figure class="mb-4 mx-auto">
+                                        <img class="w-full max-h-[240px] object-cover bg-[#F7F7F7] rounded-[32px]"
+                                             src="/temp/teacher2.webp" alt="teacher2"/>
+                                    </figure>
+                                    <span class="block text-neutral-50 text-sm/[22px] font-medium tracking-[0.1px] mb-3">مدرس زبان انگلیسی</span>
+                                    <h3 class="text-neutral-10 text-base/[24px] font-bold tracking-[0.15px] mb-3">
+                                        اسم استاد</h3>
+                                    <p class="text-justify text-base/[24px] text-neutral-50 tracking-[0.25px] line-clamp-2">
+                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+                                </div>
                             </div>
                         </div>
                     </div>
