@@ -25,6 +25,7 @@ export default defineConfig({
                 teacher: resolve(__dirname, "teacher.html"),
                 placement: resolve(__dirname, "placement.html"),
                 gallery: resolve(__dirname, "gallery.html"),
+                kid: resolve(__dirname, 'kid.html')
             },
         },
     },
