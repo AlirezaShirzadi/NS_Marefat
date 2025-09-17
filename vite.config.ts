@@ -24,6 +24,7 @@ export default defineConfig({
                 ttc: resolve(__dirname, "ttc.html"),
                 teacher: resolve(__dirname, "teacher.html"),
                 placement: resolve(__dirname, "placement.html"),
+                gallery: resolve(__dirname, "gallery.html"),
             },
         },
     },
