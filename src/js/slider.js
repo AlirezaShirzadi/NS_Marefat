@@ -73,17 +73,21 @@ $(function () {
 
     // 3) On window resize, ensure positions are recalculated
     $(window).on("resize", function () {
-        $(".kids-teacher-slider.slick-initialized:visible").slick("setPosition");
+        $(".kids-teacher-slider.slick-initialized:visible").slick(
+            "setPosition"
+        );
     });
 
-    $('.about-license-slider').slick({
+    $(".about-license-slider").slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         rtl: true,
         autoplaySpeed: 2000,
-        nextArrow: '<div class="absolute top-1/2 -translate-y-1/2 z-30 -right-2"><svg class="size-5"><use href="#icon-chevron" /></svg></div>',
-        prevArrow: '<div class="rotate-180 absolute top-1/2 -translate-y-1/2 z-30 -left-2"><svg class="size-5"><use href="#icon-chevron" /></svg></div>',
+        nextArrow:
+            '<div class="absolute top-1/2 -translate-y-1/2 z-30 -right-2"><svg class="size-5"><use href="#icon-chevron" /></svg></div>',
+        prevArrow:
+            '<div class="rotate-180 absolute top-1/2 -translate-y-1/2 z-30 -left-2"><svg class="size-5"><use href="#icon-chevron" /></svg></div>',
         responsive: [
             {
                 breakpoint: 1024,
@@ -102,5 +106,41 @@ $(function () {
             },
         ],
     });
-});
 
+    $(".ielts-slider").slick({
+        dots: true,
+        rtl: true,
+        infinite: false,
+        slidesToShow: 4,
+        draggable: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        nextArrow:
+            '<div class="absolute top-1/2 -translate-y-1/2 z-30 -right-2"><svg class="size-5"><use href="#icon-chevron" /></svg></div>',
+        prevArrow:
+            '<div class="rotate-180 absolute top-1/2 -translate-y-1/2 z-30 -left-2"><svg class="size-5"><use href="#icon-chevron" /></svg></div>',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    infinite: true,
+                },
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    infinite: true,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    dots: true,
+                },
+            },
+        ],
+    });
+});
